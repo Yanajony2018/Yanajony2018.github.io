@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<TITLE>Yuliya Skavarodkina</TITLE>
+<style>
+body
+{
+	margin:auto;
+	padding:auto;
+	text-align:center;
+	font-size:20px;
+
+	
+}
+.headline
+{
+	color:#3d2c0e;
+	font-size:46px;
+	font-family:normal;
+	text-align:center;
+}
+section
+{
+	display: -webkit-flex; 
+	display: flex;
+}
+.box
+{
+	display: -webkit-flex; 
+	display: flex;
+	width:280px;
+	margin:5px;
+}
+nav
+{ 
+	font-size:25px;
+	padding:15px;
+	background-color: #4169E1;
+	border: 5px solid #4c3213;
+	-webkit-flex: 1; 
+	-ms-flex: 1;
+	flex: 1;
+	text-align:left;
+	color:#3d2c0e;
+	width:240px;
+	list-style-type:none;
+}
+nav ul 
+{
+	font-size:26px;
+    list-style-type: none;
+    width: 200px;
+}
+li
+{
+	margin-bottom:10px;
+}
+h1
+{
+color: #3d2c0e;
+}
+article {
+    float: left;
+    padding: 86px;
+    width:80%;
+	font-size:20px;
+	text-align:center;
+}
+.zadanie
+{
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+	padding:20px;
+	margin:5px;
+	background-color:white;
+	color:black;
+	border: 5px solid #4c3213;
+}
+.widmark
+{
+	font-size:20px;
+	font-family:Tahoma;
+	padding-bottom:5px;
+    display: flex;
+	justify-content: left;
+	align-items: left;
+	line-height:100%;
+}
+
+footer
+{
+	width:100%;
+	margin-left:10 px;
+	background-color:#FFF8DC;
+	padding:10px;
+	color:#3d2c0e;
+	text-align:c;
+	border: 4px solid #4c3213;
+}
+a
+{
+	text-decoration: none;
+	color:#3d2c0e;
+}
+a
+{
+color: black;
+text-decoration: none;
+}
+
+a:visited
+{
+color: black;
+text-decoration: none;
+}
+
+a:active
+{
+color: black;
+text-decoration: none;
+}
+</style>
+</HEAD>
+<BODY>
+<div class="headline">Формула Видмарка</div>
+<section>
+<div class="box">
+<nav><ul>
+<li><a href="indexA.html">LAB 1</a></li>
+<li><a href="indexB.html">LAB 2</a></li>
+<li><a href="indexC.html">LAB 3</a></li>
+<li><a href="indexD.html">LAB 4</a></li>
+<li><a href="indexE.html">LAB 5</a></li>
+<li><a href="index.html">Come back</a></li></ul></nav>
+</div>
+<div class="zadanie">
+<div class="widmark">
+<section>
+<article>
+	A = 
+	<input type="text" id="cc" size="2"> *
+	<input type="text" id="mm" size="2"> *
+	<input type="text" id="rr" size="2"> 
+	<button type="button" value="Кнопка" onclick="count()"> = </button>
+    <input type="text" id="result"> гр.<br><br>
+	<p id="lb"><b>A = C * M * R</b>, где<br>
+	
+	<b>A —</b> масса выпитого напитка (в пересчете на чистый этанол) в граммах;<br>
+	<b>C —</b> концентрация алкоголя в крови в ‰;<br>
+	<b>M —</b> масса тела в килограммах;<br>
+	<b>R —</b> коэффициент распределения Видмарка (0.70 — для мужчин, 0.60 — для женщин).<br>
+	</p>
+  </article>
+</div></div></section>
+<div class="footer">Yana Askerka<br>yana.askerka@gmail.ru</div>
+<script>
+	function count()
+	{
+		var c;
+		var m;
+		var r;
+		c=parseFloat(cc.value);
+		m=parseFloat(mm.value);
+		r=parseFloat(rr.value);
+		a=c*m*r;
+		result.value=a;
+	}
+	
+	function myFunction(y) {
+    var x = document.getElementById(y);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+</BODY>
+</HTML>
